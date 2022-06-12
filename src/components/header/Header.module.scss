@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+
+  .links {
+    margin-top: 28px;
+    color: #1D1F22;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    user-select: none;
+
+    .link {
+      padding-left: 32px;
+    }
+
+    .link:active {
+      color: #5ECE7B;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: calc(50% - 20.5px);
+    margin-top: 24px;
+  }
+
+  .actions {
+    position: absolute;
+    right: 131px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 204px;
+    margin-top: 23px;
+
+    .currencyAction {
+      display: flex;
+      align-items: center;
+      color: #1D1F22;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+
+      .value {
+        margin-right: 10px;
+        font-family: 'Raleway', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #1D1F22;
+      }
+    }
+
+    .cartAction {
+      .cart {
+        border: 1px solid black;
+        width: 325px;
+        height: 677px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 57px;
+        left: -72px;
+        z-index: 1000;
+      }
+    }
+  }
+}

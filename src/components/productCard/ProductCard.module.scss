@@ -1,0 +1,43 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15px;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 4px 35px 0 #A8ACB030;
+    background: #FFFFFF;
+
+    .addToCart {
+      display: block;
+      position: absolute;
+      right: 31px;
+      bottom: 60px;
+    }
+  }
+
+  img {
+    width: 354px;
+    height: 330px;
+    padding: 16px;
+  }
+
+  span {
+    padding: 8px 16px;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1D1F22;
+  }
+
+  .productPrise {
+    font-weight: 500;
+  }
+
+  .addToCart {
+    display: none;
+  }
+
+}
