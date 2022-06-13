@@ -1,9 +1,13 @@
 import {combineReducers, createStore} from 'redux';
 import {TypedUseSelectorHook, useSelector} from 'react-redux';
-import {womenProductsReducer} from './womenProducts-reducer';
+import {currenciesReducer} from './currencies-reducer';
+import {categoriesReducer} from './categories-reducer';
+import {productsReducer} from './products-reducer';
 
 const rootReducer = combineReducers({
-    womenProducts: womenProductsReducer,
+    currencies: currenciesReducer,
+    categories: categoriesReducer,
+    products: productsReducer,
 
 })
 
